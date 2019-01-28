@@ -1,6 +1,14 @@
+<!-- <app-auto-complete
+    [options]="descriptionOptions$ | async"
+    name="description"
+    [invalid]="description.dirty && description.invalid"
+    formControlName="description">
+</app-auto-complete> -->
+
+<app-drag-in-drop></app-drag-in-drop>
+
 <app-toggle [check]="toggle.check" [text]="toggle.text" (toggleResult)="exibe = $event"></app-toggle>
 <span>Resultado do toggle - {{exibe}}</span>
-
 
 <ap-search 
     (onTyping)="filter = $event" [value]="filter">
